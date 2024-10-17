@@ -1,0 +1,14 @@
+# Archivos y carpetas de Visual Studio
+.vs/
+*.user
+*.suo
+*.exe
+*.dll
+*.pdb
+obj/
+bin/
+
+# Archivos de Git
+.gitignore
+
+# Otros archivos que no quieres rastrear

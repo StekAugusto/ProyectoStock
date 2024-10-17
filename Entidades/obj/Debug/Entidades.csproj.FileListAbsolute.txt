@@ -1,0 +1,6 @@
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Entidades\bin\Debug\Entidades.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Entidades\bin\Debug\Entidades.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Entidades\obj\Debug\Entidades.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Entidades\obj\Debug\Entidades.pdb

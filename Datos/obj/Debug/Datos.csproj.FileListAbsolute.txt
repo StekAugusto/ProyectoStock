@@ -1,0 +1,9 @@
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\bin\Debug\Datos.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\bin\Debug\Datos.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\bin\Debug\Entidades.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\bin\Debug\Entidades.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\obj\Debug\Datos.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Datos\obj\Debug\Datos.pdb

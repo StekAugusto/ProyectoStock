@@ -1,0 +1,11 @@
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\bin\Debug\Negocios.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\bin\Debug\Negocios.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\bin\Debug\Datos.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\bin\Debug\Entidades.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\bin\Debug\Datos.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\bin\Debug\Entidades.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\obj\Debug\Negocios.csproj.AssemblyReference.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\obj\Debug\Negocios.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\Negocios\obj\Debug\Negocios.pdb

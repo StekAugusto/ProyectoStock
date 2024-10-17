@@ -1,0 +1,15 @@
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\ProyectoStockGrupo13.exe.config
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\ProyectoStockGrupo13.exe
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\ProyectoStockGrupo13.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Entidades.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Negocios.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Entidades.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Negocios.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\Capas.csproj.AssemblyReference.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrLogin.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.Properties.Resources.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\Capas.csproj.GenerateResource.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\Capas.csproj.CoreCompileInputs.cache
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\Capas.csproj.CopyComplete
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.exe
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.pdb
