@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Negocios;
 
 namespace ProyectoStockGrupo13
 {
@@ -79,6 +80,37 @@ namespace ProyectoStockGrupo13
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            UserModel ControlUsuario = new UserModel();
+            if(ControlUsuario.LoginUsuario(txtUsuario.Text, txtClave.Text) == true)
+            {
+                // Instancia menu principal
+                FrMenuPrincipal menuPrincipal = new FrMenuPrincipal();
+
+                // Mostrar formulario principal
+                menuPrincipal.Show();
+
+                // Cerrar login
+                this.Hide(); // Oculta formulario
+            }
+            else
+            {
+                MessageBox.Show("ERROR");
+            }
+            
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtUsuario.Text = "Usuario";
+            txtUsuario.ForeColor = Color.DimGray; // Restablecer el color del placeholder
+
+            txtClave.Text = "Clave";
+            txtClave.ForeColor = Color.DimGray; // Restablecer el color del placeholder
+            txtClave.UseSystemPasswordChar = false; // Mostrar texto como texto normal
         }
     }
 }

@@ -13,3 +13,6 @@ C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\
 C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\Capas.csproj.CopyComplete
 C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.exe
 C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Datos.dll
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Datos.pdb
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrMenuPrincipal.resources
