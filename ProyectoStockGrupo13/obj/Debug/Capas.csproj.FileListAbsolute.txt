@@ -16,3 +16,9 @@ C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\
 C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Datos.dll
 C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\bin\Debug\Datos.pdb
 C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrMenuPrincipal.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrInicio.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrCRUDProductos.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrActualizarEmpleado.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrCompra.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrVenta.resources
+C:\C# PROYECTO PROGRAMACION\ProyectoStockGrupo13\ProyectoStockGrupo13\obj\Debug\ProyectoStockGrupo13.FrConsultarMovimientos.resources

@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormHijas\FrActualizarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijas\FrActualizarEmpleado.Designer.cs">
+      <DependentUpon>FrActualizarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHijas\FrCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijas\FrCompra.Designer.cs">
+      <DependentUpon>FrCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHijas\FrConsultarMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijas\FrConsultarMovimientos.Designer.cs">
+      <DependentUpon>FrConsultarMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHijas\FrInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijas\FrInicio.Designer.cs">
+      <DependentUpon>FrInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,13 +82,43 @@
     <Compile Include="FrMenuPrincipal.Designer.cs">
       <DependentUpon>FrMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHijas\FrCRUDProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijas\FrCRUDProductos.Designer.cs">
+      <DependentUpon>FrCRUDProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHijas\FrVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHijas\FrVenta.Designer.cs">
+      <DependentUpon>FrVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormHijas\FrActualizarEmpleado.resx">
+      <DependentUpon>FrActualizarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHijas\FrCompra.resx">
+      <DependentUpon>FrCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHijas\FrConsultarMovimientos.resx">
+      <DependentUpon>FrConsultarMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHijas\FrInicio.resx">
+      <DependentUpon>FrInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrLogin.resx">
       <DependentUpon>FrLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrMenuPrincipal.resx">
       <DependentUpon>FrMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHijas\FrCRUDProductos.resx">
+      <DependentUpon>FrCRUDProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHijas\FrVenta.resx">
+      <DependentUpon>FrVenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -90,7 +144,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\menu2.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
@@ -101,6 +155,27 @@
       <Project>{03b90692-1583-47ac-9bfd-5714b52fcc7c}</Project>
       <Name>Negocios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cofre-del-tesoro-96 w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cofre-del-tesoro-96 w1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cofre-del-tesoro-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store-background-gly9ersnb8mv5f9y.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paquete-de-cigarrillos-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paquete-de-cigarrillos-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orion_user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

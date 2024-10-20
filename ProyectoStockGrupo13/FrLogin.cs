@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Negocios;
 
+
 namespace ProyectoStockGrupo13
 {
     public partial class FrLogin : Form
@@ -25,6 +26,16 @@ namespace ProyectoStockGrupo13
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
+        // Método para limpiar los campos de usuario y clave
+        private void LimpiarCampos()
+        {
+            txtUsuario.Text = "Usuario";
+            txtUsuario.ForeColor = Color.DimGray; // Restablecer el color del placeholder
+
+            txtClave.Text = "Clave";
+            txtClave.ForeColor = Color.DimGray; // Restablecer el color del placeholder
+            txtClave.UseSystemPasswordChar = false; // Mostrar texto como texto normal
+        }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
@@ -85,32 +96,58 @@ namespace ProyectoStockGrupo13
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             UserModel ControlUsuario = new UserModel();
-            if(ControlUsuario.LoginUsuario(txtUsuario.Text, txtClave.Text) == true)
+            
+            if(txtUsuario.Text != "Usuario")
             {
-                // Instancia menu principal
-                FrMenuPrincipal menuPrincipal = new FrMenuPrincipal();
+                if(txtClave.Text != "Clave")
+                {
+                    if (ControlUsuario.LoginUsuario(txtUsuario.Text, txtClave.Text) == true)
+                    {
 
-                // Mostrar formulario principal
-                menuPrincipal.Show();
+                        // Instancia menu principal
+                        FrMenuPrincipal menuPrincipal = new FrMenuPrincipal();
 
-                // Cerrar login
-                this.Hide(); // Oculta formulario
+                        // Mostrar formulario principal
+                        menuPrincipal.Show();
+
+                        menuPrincipal.FormClosed += CerrarSesion;
+
+                        // Limpiar los campos del formulario de login
+                        LimpiarCampos();
+
+                        // Cerrar login
+                        this.Hide(); // Oculta formulario
+
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("ERROR: Datos invalidos");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("ERROR: Ingrese clave");
+                }
             }
             else
             {
-                MessageBox.Show("ERROR");
+                MessageBox.Show("ERROR: Ingrese usuario");
             }
+            
             
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            txtUsuario.Text = "Usuario";
-            txtUsuario.ForeColor = Color.DimGray; // Restablecer el color del placeholder
+            // Limpiar los campos del formulario de login
+            LimpiarCampos();
+        }
 
-            txtClave.Text = "Clave";
-            txtClave.ForeColor = Color.DimGray; // Restablecer el color del placeholder
-            txtClave.UseSystemPasswordChar = false; // Mostrar texto como texto normal
+        private void CerrarSesion(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+            txtUsuario.Focus();
         }
     }
 }
