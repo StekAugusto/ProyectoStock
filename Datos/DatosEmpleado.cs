@@ -9,6 +9,7 @@ using Entidades.Cache;
 using System.Windows.Input;
 using System.Security.Cryptography.X509Certificates;
 using Entidades;
+using System.Net;
 
 namespace Datos
 {
@@ -19,7 +20,7 @@ namespace Datos
             using (var connection = GetConnection())
             {
                 connection.Open();
-                using (var command = new SqlCommand()) 
+                using (var command = new SqlCommand())
                 {
                     command.Connection = connection;
 
@@ -65,7 +66,7 @@ namespace Datos
         // Metodo para permisos y roles
         public void PermisosRol()
         {
-            if(CacheLogin.TipoEmpleado == PosicionRol.Administrador)
+            if (CacheLogin.TipoEmpleado == PosicionRol.Administrador)
             {
 
             }
@@ -78,5 +79,118 @@ namespace Datos
 
             }
         }
+
+        // Obtener empleados desde base de datos
+        // ---------------------------------------------------------------------------
+        public DataTable ObtenerEmpleados()
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT * FROM Empleados";
+                    command.CommandType = CommandType.Text;
+
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable tablaEmpleados = new DataTable();
+                    tablaEmpleados.Load(reader);
+                    return tablaEmpleados;
+                }
+            }
+        }
+
+        // ---------------------------------------------------------------------------
+
+        // Verificar si el DNI existe
+        // ---------------------------------------------------------------------------
+        public bool ExisteEmpleado(long dni)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT COUNT(1) FROM Empleados WHERE DNI = @DNI";
+                    command.Parameters.AddWithValue("@DNI", dni);
+                    return Convert.ToInt32(command.ExecuteScalar()) > 0;
+                }
+            }
+        }
+        // ---------------------------------------------------------------------------
+
+        // Insertar un nuevo empleado
+        // ---------------------------------------------------------------------------
+        public bool AgregarEmpleado(long DNI,string apellido, string nombre, string telefono, DateTime fechaNacimiento, string usuario, string clave, string rol)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = @"INSERT INTO Empleados (DNI, Apellido, Nombre, Telefono, FechaNac, Usuario, Clave, TipoEmpleado) 
+                                        VALUES (@DNI,@Apellido, @Nombre, @Telefono, @FechaNac, @Usuario, @Clave, @TipoEmpleado)";
+                    command.Parameters.AddWithValue("@DNI", DNI);
+                    command.Parameters.AddWithValue("@Apellido", apellido);
+                    command.Parameters.AddWithValue("@Nombre", nombre);
+                    command.Parameters.AddWithValue("@Telefono", telefono);
+                    command.Parameters.AddWithValue("@FechaNac", fechaNacimiento);
+                    command.Parameters.AddWithValue("@Usuario", usuario);
+                    command.Parameters.AddWithValue("@Clave", clave);
+                    command.Parameters.AddWithValue("@TipoEmpleado", rol);
+                    return command.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+        // ---------------------------------------------------------------------------
+
+        // Modificar empleado
+        // ---------------------------------------------------------------------------
+        public bool ModificarEmpleado(long dni, string apellido, string nombre, string telefono, DateTime fechaNacimiento, string usuario, string clave, string rol)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = @"UPDATE Empleados SET Apellido = @Apellido, Nombre = @Nombre, Telefono = @Telefono, 
+                                        FechaNac = @FechaNac, Usuario = @Usuario, Clave = @Clave, TipoEmpleado = @TipoEmpleado
+                                        WHERE DNI = @DNI";
+                    command.Parameters.AddWithValue("@DNI", dni);
+                    command.Parameters.AddWithValue("@Apellido", apellido);
+                    command.Parameters.AddWithValue("@Nombre", nombre);
+                    command.Parameters.AddWithValue("@Telefono", telefono);
+                    command.Parameters.AddWithValue("@FechaNac", fechaNacimiento);
+                    command.Parameters.AddWithValue("@Usuario", usuario);
+                    command.Parameters.AddWithValue("@Clave", clave);
+                    command.Parameters.AddWithValue("@TipoEmpleado", rol);
+                    return command.ExecuteNonQuery() > 0;
+                }
+            }
+        }
+        // ---------------------------------------------------------------------------
+
+        // Eliminar empleado
+        // ---------------------------------------------------------------------------
+        public bool EliminarEmpleado(long dni)
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "DELETE FROM Empleados WHERE DNI = @DNI";
+                    command.Parameters.AddWithValue("@DNI", dni);
+                    return command.ExecuteNonQuery() > 0; // Retorna true si se eliminó alguna fila
+                }
+            }
+        }
+        // ---------------------------------------------------------------------------
+
     }
 }

@@ -15,6 +15,23 @@ namespace ProyectoStockGrupo13
         public FrCompra()
         {
             InitializeComponent();
+            dtpFechaCompra.Value = DateTime.Now;      
+        }
+
+        private void FrCompra_Load(object sender, EventArgs e)
+        {
+                                
+
+
+        }
+
+        private void cbNombProveedor_Leave(object sender, EventArgs e)
+        {
+            if (!cbNombProveedor.Items.Contains(cbNombProveedor.Text))
+            {
+                MessageBox.Show("Debe seleccionar un proveedor existente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cbNombProveedor.Focus();
+            }
         }
     }
 }
